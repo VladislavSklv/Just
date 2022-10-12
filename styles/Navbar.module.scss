@@ -1,0 +1,50 @@
+$main-color: rgb(27, 27, 27);
+
+.navbar{
+    height: 50px;
+    color: #fff;
+    background-color: $main-color;
+    &__wrapper{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__main{
+        display: flex;
+        align-items: center;
+        p{
+            margin-left: 6px;
+            span{
+                font-size: 24px;
+            }
+        }
+    }
+    &__logo{
+        font-size: 26px;
+        font-weight: 900;
+        transition: margin-right 0.3s;
+        &:hover{
+            margin-right: 15px;
+        }
+    }
+    &__personal{
+        transition: border-color 0.2s;
+        border: 1px solid rgba(255, 255, 255, 0);
+        border-radius: 4px;
+        padding: 4px 6px;
+        &:hover{
+            border-color: #fff;
+        }
+    }
+}
+
+@media(max-width: 426px){
+    .navbar{
+        &__main{
+            p{
+                display: none;
+            }
+        }
+    }
+}

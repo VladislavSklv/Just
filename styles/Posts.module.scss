@@ -1,0 +1,41 @@
+$post-color: #F0F0F0;
+$main-color: rgb(27, 27, 27);
+$little-text-color: rgb(81, 81, 81);
+
+.post{
+    background-color: $post-color;
+    padding: 15px;
+    border-radius: 4px;
+    max-width: 1100px;
+    margin: 20px auto 20px auto;
+    &__about{
+        font-size: 12px;
+        display: flex;
+        color: $little-text-color;
+        margin-bottom: 2px;
+    }
+    &__author{
+        margin-right: 7px;
+    }
+    &__title{
+        font-size: 26px;
+        font-weight: 700;
+        color: $main-color;
+    }
+    &__subtitle{
+        font-size: 16px;
+        color: $little-text-color;
+        margin-bottom: 4px;
+    }
+    &__preview{
+        width: 100%;
+        margin-bottom: 10px;
+        img{
+            width: 100%;
+        }
+    }
+    &__descr{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+}
